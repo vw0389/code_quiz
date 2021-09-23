@@ -1,3 +1,9 @@
+* {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
 #highscores {
     align-items: center;
 }
@@ -7,4 +13,15 @@
 #main {
     align-items: center;
     text-align: center;
+    
+}
+#correct {
+    align-items: center;
+    text-align: center;
+}
+.question {
+    padding: 5px 5px;
+    margin: 5px 5px;
+    display:inline-block;
+    position:relative;
 }

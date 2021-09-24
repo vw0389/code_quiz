@@ -1,6 +1,7 @@
 # Code Quiz!
 This is a mock programming quiz, utilizing javascript to function.
 
+![Alt text] (./screenshot.png)
 ## User Story
 AS A coding boot camp student
 

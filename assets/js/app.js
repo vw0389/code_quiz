@@ -28,6 +28,7 @@ function countdown(timeLeft) {
         }
         timeEl.textContent = text;
     }, 1000);
+    endQuiz();
 }
 function timerEndedDoSomething() {
     while (mainEl.firstChild) {
@@ -38,12 +39,25 @@ function timerEndedDoSomething() {
 
 function toggleHighScores() {
     // Toggled high scores, stop timer, stop IP quiz and display high scores
+    clearMain();
+    
+    if (localStorage.length === 0) {
+        h1El = document.createElement("h1");
+        h1El.textContent = "There are no highscores.";
+        mainEl.appendChild(h1El);
+        highScoreEl.textContent = "Back to Quiz";
+    } else {
+        
+    }
+    
 }
-function loadHighscores() {
-    // Load highscores from localstorage
+function endQuiz() {
+    
 }
-function saveHighscore(name, score) {
-
+function saveHighscore(name) {
+    localStorage.setItem(name,score);
+    score = 0;
+    toggleHighScores();
 }
 function inputNameForHighscore (){
     h1El = document.createElement("h1");
@@ -56,15 +70,21 @@ function inputNameForHighscore (){
     p2El.textContent = "Enter a name for highscores";
     submitEl.textContent = "submit";
     inputEl.setAttribute("type","text");
-    inputEl.setAttribute("class","submit-text");
-    submitEl.setAttribute("class","submit");
+    inputEl.setAttribute("id","submit-text");
+    inputEl.setAttribute("name", "text-submit");
+    submitEl.setAttribute("id","submit");
     mainEl.appendChild(h1El);
     mainEl.appendChild(p1El);
     mainEl.appendChild(p2El);
     mainEl.appendChild(inputEl);
     mainEl.appendChild(submitEl);
     submitEl.addEventListener('click', function () {
-
+        var username = document.querySelector("#submit-text").value;
+        if (username === "" || username === null || username.length < 1 || username.length > 16){
+            alert("Must enter a username between 1 and 16 characters to save highscore");
+        }
+        saveHighscore(username);
+        toggleHighScores();
     });
 }
 function startQuiz() {
@@ -164,3 +184,11 @@ highScoreEl.addEventListener('click', function () {
 startQuizEl.addEventListener('click', function () {
     startQuiz();
 })
+highScoreEl.addEventListener('click'), function () {
+    toggleHighScores();
+}
+
+// TODO
+// Decrement time if question answered incorrectly
+// Quiz ending when out of time
+// Toggle highscores, showing highscores

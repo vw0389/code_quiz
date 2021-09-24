@@ -1,0 +1,82 @@
+[
+    {
+        "question": "What does specification does javascript adhere to?",
+        "a": "java",
+        "b": "JSON STD 90",
+        "c": "ECMAScript",
+        "d": "netscape STD 30.30",
+        "correct": "c"
+    },
+    {
+        "question": "What data structure does python3 use under the hood for arrays e.g. []?",
+        "a": "array",
+        "b": "list",
+        "c": "set",
+        "d": "all the above",
+        "correct": "b"
+    },
+    {
+        "question": "What does JSON stand for?",
+        "a": "JavaScript Object Notation",
+        "b": "Java standard object number",
+        "c": "The Brazilian-born Swedish rapper and songwriter",
+        "d": "all the above",
+        "correct": "a"
+    },
+    {
+        "question": "What kind of program is VSCode?",
+        "a": "An oven simulator that cooks virtual cookies",
+        "b": "A video game",
+        "c": "Some kind of walrus",
+        "d": "An integrated development environment",
+        "correct": "d"
+    },
+    {
+        "question": "Why are Strings immutable in Java?",
+        "a": "security, synchronization and concurrency, caching, and class loading",
+        "b": "for stylistic reasons",
+        "c": "so it can inherit from other objects",
+        "d": "all the above",
+        "correct": "a"
+    },
+    {
+        "question": "What does the HTML head element contain?",
+        "a": "html for loops",
+        "b": "logic of the html",
+        "c": "recipes for soup",
+        "d": "metadata",
+        "correct": "d"
+    },
+    {
+        "question": "What is the syntax for selecting an html elements class in css?",
+        "a": ".class",
+        "b": "#class",
+        "c": "?class",
+        "d": "-class",
+        "correct": "a"
+    },
+    {
+        "question": "What does the ternary operator in javascript look like?",
+        "a": ")isMember( : 2.00 ? 10.00",
+        "b": "(isMember) : '2:00' ?: '10.00'",
+        "c": "(isMember ? '2.00' : '10.00')",
+        "d": "? isMember : '2.00' ? '10.00'",
+        "correct": "c"
+    },
+    {
+        "question": "what is a javascript arrow function",
+        "a": "a fancy way of declaring objects",
+        "b": "An arrow function expression is a compact alternative to a traditional function expression, but is limited and can't be used in all situations.",
+        "c": "a lambda function",
+        "d": "b & c",
+        "correct": "d"
+    },
+    {
+        "question": "How do you declare a set in python3?",
+        "a": "myset = set()",
+        "b": "myset = []",
+        "c": "myset = 'set'",
+        "d": "myset = {}",
+        "correct": "a"
+    }
+]

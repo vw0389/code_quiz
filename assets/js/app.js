@@ -139,9 +139,12 @@ function inputNameForHighscore() {
     mainEl.appendChild(inputEl);
     mainEl.appendChild(submitEl);
     submitEl.addEventListener('click', function () {
+        debugger;
         var username = document.querySelector("#submit-text").value;
         if (username === "" || username === null || username.length < 1 || username.length > 16) {
             alert("Must enter a username between 1 and 16 characters to save highscore");
+            inputNameForHighscore();
+            return;
         }
         var userObject = {
             username: username,
